@@ -1,0 +1,13 @@
+---
+apiVersion: image.toolkit.fluxcd.io/v1alpha1
+kind: ImagePolicy
+metadata:
+  name: porter-hello
+  namespace: demo
+spec:
+  imageRepositoryRef:
+    name: porter-hello
+  policy:
+    semver:
+      range: 0.x
+

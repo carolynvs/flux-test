@@ -1,0 +1,11 @@
+---
+apiVersion: porter.sh/v1
+kind: Installation
+metadata:
+  name: porterops-flux-demo
+  namespace: demo
+  annotations:
+    retry: "0"
+spec:
+  reference: "YOURNAME/porter-hello:v0.1.0"
+  action: "install"
